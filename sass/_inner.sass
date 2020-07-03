@@ -1,0 +1,389 @@
+// inner blocks
+.publication-list, .insurance-list
+	font-size: 10px
+	color: #696969
+	li
+		margin-bottom: 5px
+	a
+		color: #000
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.insurance-list
+	a
+		font-size: 12px
+.publication
+	padding: 0 10px 			
+.publication__year
+	font: 18px Arial, sans-serif
+	margin-bottom: 18px
+.publication__docs
+	padding-left: 40px
+	li
+		position: relative
+		padding-left: 40px
+		margin-bottom: 35px 
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(pdf)
+		a
+			color: #0672b9
+			text-decoration: underline
+			font-style: italic
+			&:hover
+				text-decoration: none	  	
+.pagination
+	ul
+		+clr
+		margin: 0 0 20px 20px 
+		li
+			position: relative
+			float: left
+			padding: 0 3px 0 6px 
+			text-align: center 
+			&:before
+				content: "|"
+				position: absolute
+				top: 1px
+				left: 0
+			&:first-child
+				&:before
+					content: ""	
+			a
+				font-size: 10px
+				color: #000
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+		li.is-active
+			a
+				text-decoration: none
+.breadcrumbs
+	margin-left: 270px 
+	ul
+		font-size: 0
+		li
+			display: inline-block
+			position: relative
+			font-size: 10px
+			padding: 0 5px 0 8px 
+			&:before
+				content: "/"
+				position: absolute
+				top: 1px
+				left: 0
+			&:first-child
+				padding: 0 5px 0 0 
+				&:before
+					display: none
+		a
+			font-size: 10px
+			color: #000
+			text-decoration: underline
+			&.is-active
+				text-decoration: none					
+.ins-type
+	font: 12px Arial, sans-serif
+	color: #000
+	padding: 10px 20px 0
+	border-bottom: 1px solid #b2d4eb 
+	p
+		margin-bottom: 10px 
+.ins-type__title
+	font-size: 24px
+	margin-bottom: 15px 
+.ins-type__sub-title	
+	font-weight: bold
+	font-size: 14px
+	margin-bottom: 15px
+.ins-inquirer 
+	padding-top: 20px
+	.publication__docs
+		padding-left: 0 
+.ins-inquirer__title
+	margin-bottom: 30px
+	font-size: 18px 	 			
+.i-logotype
+	margin-top: 80px 
+	text-align: right
+	font-size: 10px
+	span
+		position: relative
+		display: inline-block
+		top: -20px
+		text-align: left
+		width: 230px
+		line-height: 1.2
+		strong
+			font-weight: bold	
+	i
+		position: absolute
+		top: -8px
+		left: -38px
+		+s(logo-small)
+.i-logotype_left
+	margin-top: 50px
+	text-align: left
+	padding-left: 30px
+	i
+		top: -2px				
+.ins-cover
+	font-size: 14px
+	ul
+		font-size: 12px
+		margin-bottom: 15px
+	b
+		font-weight: bold			
+.docs-list
+	li
+		position: relative
+		padding-left: 27px
+		&:before
+			content: ""
+			position: absolute
+			top: 5px
+			left: 0
+			+s(doc)
+		a
+			font-size: 12px
+			color: #000
+			text-decoration: underline
+			&:hover
+				text-decoration: none	 
+.publication-list_parthners
+	li
+		color: #000				
+.parthners-list
+	+clr
+.parthners
+	width: 33%
+	float: left
+	eight: 150px
+	text-align: center
+	a
+		display: inline-block
+		line-height: 150px
+	img
+		vertical-align: middle			
+div.content
+	+clr
+div.container_mod
+	margin-left: 270px 
+	
+//photoalbum
+
+.photoalbum-list
+	font-size: 0
+.photoalbum
+	width: 320px
+	display: inline-block
+	vertical-align: top
+	margin-right: 25px
+	margin-bottom: 10px  
+	padding: 15px 2px 5px 12px
+	border-top: 1px solid #b2d4eb  
+	background: #FFF  		
+.photoalbum__title
+	margin-bottom: 15px
+	font-size: 14px
+	font-weight: bold
+	color: #000	
+.photo-gallery
+	font-size: 0
+		margin-left: -3px 
+	li
+		display: inline-block
+		vertical-align: top
+		width: 33px
+		height: 33px
+		margin: 0 0 4px 3px 
+		border-top: 1px solid #97c5e4
+		border-left: 1px solid #97c5e4
+		border-right: 1px solid #d3e7f3
+		border-bottom: 1px solid #d3e7f3
+.conference-list
+	font-size: 10px
+	& > li
+		margin-bottom: 5px
+	a
+		font-style: italic
+		text-decoration: underline
+		color: #000
+		&:hover
+			text-decoration: none
+.seminar
+	font-size: 12px
+	padding-bottom: 45px
+	padding-left: 18px  			
+.seminar__title
+	font-size: 18px
+	margin-bottom: 10px
+.seminar__docs
+	padding: 25px 0 0 60px
+	margin-bottom: 30px 				
+.doc-icon
+	position: relative
+	top: 5px
+	display: inline-block
+	vertical-align: baseline
+	+s(doc_icon)
+.seminar__item 
+	a
+		display: inline-block
+		vertical-align: baseline
+		color: #0672b9
+		font-style: italic
+		font-size: 12px
+.main-new
+	margin-bottom: 16px
+	padding: 15px 20px 0 
+	background: rgba(255,255,255, 0.7)
+	border-bottom: 1px solid #b2d4eb
+	border-top: 1px solid #b2d4eb   		
+.main-new__title
+	display: inline-block
+	margin-bottom: 20px
+	font-size: 18px
+	color: #000	
+	text-decoration: none
+	&:hover
+		text-decoration: underline 	
+.new__text
+	font-size: 12px
+	margin-bottom: 30px
+	img
+		float: left
+		border: 1px solid #0072bc
+		margin-right: 12px
+		margin-top: 6px  		
+.news-list
+.news-list__link
+	font-size: 10px
+	color: #000
+	text-decoration: none
+	text-transform: uppercase
+	&:hover
+		text-decoration: underline
+.news-list__content
+	margin-top: 5px
+	margin-left: -25px 
+.news-list__item
+	display: inline-block
+	vertical-align: top
+	width: 380px
+	margin-left: 25px  
+	a
+		display: block
+		margin-top: 2px
+		height: 180px 
+		padding: 10px 20px
+		overflow: hidden  
+		background: rgba(255,255,255, 0.7)
+		text-decoration: none
+		color: #000
+		&:hover
+			background: rgba(6,114,185,.8)
+			color: #fff 
+	.new__text
+		span
+			display: block
+			font-size: 10px
+			margin-bottom: 5px
+.new-list__title
+	font-weight: bold
+	font-size: 14px			 	
+.news__sub-title
+	font-weight: bold
+	font-size: 14px
+	margin-bottom: 5px 	
+.main-new_single
+	.main-new__title
+		font-size: 24px
+		&:hover
+			text-decoration: none
+
+//books
+
+.books-list
+	li
+		margin-bottom: 15px
+		font-size: 10px
+		color: #000
+		a
+			color: #000
+			font-weight: bold
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		b
+			font-weight: bold		
+.books
+	font-size: 0
+	padding-top: 25px
+	.book
+		display: inline-block
+		vertical-align: top
+		width: 334px
+		margin-bottom: 40px
+		margin-left: 30px 
+		width: 45%
+		margin-left: 5%  
+		+clr
+		font-size: 12px
+.book__img
+	float: left
+	width: 124px
+.book__content
+	// float: right
+	// width: 210px 		 			
+	overflow: hidden
+.book__title
+	display: block
+	font-size: 14px
+	font-weight: bold
+	margin-bottom: 15px
+	color: #000
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+.book_non-image
+	.book__content
+		float: none
+		width: 100%
+.single-book
+	+clr
+	padding-top: 20px
+	padding-bottom: 30px 
+	font-size: 12px
+.single-book__img
+	float: left
+	width: 142px
+	text-align: center 			 		
+.single-book__content
+	// float: right
+	// width: 648px 
+	overflow: hidden
+.single-book__title	
+	font-size: 14px
+	font-weight: bold
+	margin-bottom: 15px 	
+.single-book__info
+	margin-bottom: 15px
+.single-book__text
+	p
+		margin-bottom: 10px	
+
+.parallax-wrap
+	position: relative
+	overflow: hidden
+	height: 250px 		
+.parallax-viewport
+	position: absolute
+	left: 50%
+	margin-left: -780px 					
+.parallax-viewport_index
+	margin: 0 auto
+	left: 0!important 		
